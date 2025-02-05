@@ -77,5 +77,19 @@ const objVehiculo={
     }
 };
 objVehiculo.mostrarDatos();
+console.log (objVehiculo.modelo);
 
-console.log (objVehiculo.mostrarDatos)
+//creacion de objeto usando un constructor new Object()
+
+const electronico=new Object();
+electronico.marca="Iphone";
+electronico.modelo="93042";
+electronico.RAM=12;
+electronico.dd= 256
+electronico.getModelo=function(){
+    console.log ("El modelo del celular es: "+ this.modelo);
+}
+
+console.log(electronico);
+electronico.getModelo();
+
